@@ -1,0 +1,4 @@
+SELECT *
+    FROM EMP
+    WHERE SAL > NULL
+        AND COMM IS NULL;

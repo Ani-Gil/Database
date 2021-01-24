@@ -1,0 +1,5 @@
+SELECT *
+    FROM EMP
+    WHERE JOB = 'MANAGER'
+        OR JOB = 'SALESMAN'
+        OR JOB = 'CLERK';
