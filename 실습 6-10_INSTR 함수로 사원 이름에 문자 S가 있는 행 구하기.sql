@@ -1,0 +1,3 @@
+SELECT *
+    FROM EMP
+    WHERE INSTR(ENAME, 'S') > 0;

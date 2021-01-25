@@ -1,0 +1,4 @@
+SELECT
+    RPAD('971225-', 14, '*') AS RPAD_JMNO,
+    RPAD('010-1234-', 13, '*') AS RPAD_PHONE
+    FROM DUAL;
