@@ -1,0 +1,2 @@
+SELECT '1,300' - '1,500'
+    FROM DUAL;
