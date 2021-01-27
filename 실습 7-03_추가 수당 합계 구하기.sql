@@ -1,0 +1,2 @@
+SELECT SUM(COMM)
+    FROM EMP;
