@@ -1,0 +1,1 @@
+SELECT * FROM sample24 WHERE NOT(a <> 0 OR b <> 0);
