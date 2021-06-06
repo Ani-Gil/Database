@@ -1,0 +1,1 @@
+SELECT * FROM sample31 ORDER BY age;
