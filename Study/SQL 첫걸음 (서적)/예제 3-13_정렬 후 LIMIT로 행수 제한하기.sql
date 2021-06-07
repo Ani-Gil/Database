@@ -1,0 +1,1 @@
+SELECT * FROM sample33 ORDER BY no DESC LIMIT 3;

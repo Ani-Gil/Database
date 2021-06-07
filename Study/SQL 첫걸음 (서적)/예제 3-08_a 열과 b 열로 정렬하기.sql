@@ -1,0 +1,1 @@
+SELECT * FROM sample32 ORDER BY a, b;

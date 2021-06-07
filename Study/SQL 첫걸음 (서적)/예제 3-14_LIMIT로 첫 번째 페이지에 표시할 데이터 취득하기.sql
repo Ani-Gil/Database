@@ -1,0 +1,1 @@
+SELECT * FROM sample33 LIMIT 3 OFFSET 0;
