@@ -1,0 +1,1 @@
+SELECT amount, ROUND(amount, 1) FROM sample341;

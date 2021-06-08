@@ -1,0 +1,1 @@
+SELECT CONCAT(quantity, unit) FROM sample35;

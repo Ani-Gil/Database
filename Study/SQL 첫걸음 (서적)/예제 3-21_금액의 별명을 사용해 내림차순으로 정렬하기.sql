@@ -1,0 +1,1 @@
+SELECT *, price * quantity AS amount FROM sample34 ORDER BY amount DESC;
