@@ -1,0 +1,3 @@
+DELETE FROM sample41 WHERE no = 3;
+
+SELECT * FROM sample41;
