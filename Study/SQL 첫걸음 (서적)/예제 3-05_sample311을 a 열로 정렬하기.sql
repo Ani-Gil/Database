@@ -1,0 +1,1 @@
+SELECT * FROM sample311 ORDER BY a;

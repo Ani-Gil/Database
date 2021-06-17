@@ -1,0 +1,1 @@
+SELECT * FROM sample24 WHERE a = 1 OR a = 2 AND b = 1 OR b = 2;

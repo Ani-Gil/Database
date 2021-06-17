@@ -1,0 +1,4 @@
+SELECT *
+    FROM EMP
+    WHERE DEPTNO = 30
+    OR JOB = 'CLERK';

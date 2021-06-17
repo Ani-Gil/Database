@@ -1,0 +1,1 @@
+SELECT * FROM sample25 WHERE text LIKE '%SQL%';

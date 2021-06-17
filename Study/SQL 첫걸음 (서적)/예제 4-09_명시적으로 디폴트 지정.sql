@@ -1,0 +1,3 @@
+INSERT INTO sample411(no, d) VALUES(2, DEFAULT);
+
+SELECT * FROM sample411;

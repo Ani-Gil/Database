@@ -1,0 +1,1 @@
+SELECT *, price * quantity AS amount FROM sample34 WHERE price * quantity >= 2000;

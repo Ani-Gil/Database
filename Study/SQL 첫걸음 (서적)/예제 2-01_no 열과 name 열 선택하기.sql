@@ -1,0 +1,1 @@
+SELECT no, name FROM sample21;

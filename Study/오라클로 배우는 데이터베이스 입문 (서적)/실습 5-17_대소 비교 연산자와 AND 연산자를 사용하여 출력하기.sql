@@ -1,0 +1,4 @@
+SELECT *
+    FROM EMP
+    WHERE SAL >= 2000
+        AND SAL <= 3000;

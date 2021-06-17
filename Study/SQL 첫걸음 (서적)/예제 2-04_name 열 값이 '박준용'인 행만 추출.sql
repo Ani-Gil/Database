@@ -1,0 +1,1 @@
+SELECT * FROM sample21 WHERE name = '박준용';

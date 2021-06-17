@@ -1,0 +1,4 @@
+SELECT SYSDATE,
+    NEXT_DAY(SYSDATE, '¿ù¿äÀÏ'),
+    LAST_DAY(SYSDATE)
+    FROM EMP;

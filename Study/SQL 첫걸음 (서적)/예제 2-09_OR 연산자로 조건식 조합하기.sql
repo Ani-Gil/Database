@@ -1,0 +1,1 @@
+SELECT * FROM sample24 WHERE a <> 0 OR b <> 0;
