@@ -1,0 +1,1 @@
+SELECT AVG(quantity), SUM(quantity)/COUNT(quantity) FROM sample51;

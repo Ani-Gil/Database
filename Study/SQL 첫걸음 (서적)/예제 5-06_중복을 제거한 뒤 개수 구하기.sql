@@ -1,0 +1,1 @@
+SELECT COUNT(ALL name), COUNT(DISTINCT name) FROM sample51;

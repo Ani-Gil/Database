@@ -1,0 +1,1 @@
+SELECT COUNT(no), COUNT(name) FROM sample51;

@@ -1,0 +1,3 @@
+SELECT ALL name FROM sample51;
+
+SELECT DISTINCT name FROM sample51;

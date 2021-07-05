@@ -1,0 +1,1 @@
+SELECT COUNT(*) FROM sample51 WHERE name = 'A';

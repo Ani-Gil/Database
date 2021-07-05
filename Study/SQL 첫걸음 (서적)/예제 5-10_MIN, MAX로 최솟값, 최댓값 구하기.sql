@@ -1,0 +1,1 @@
+SELECT MIN(quantity), MAX(quantity), MIN(name), MAX(name) FROM sample51;
