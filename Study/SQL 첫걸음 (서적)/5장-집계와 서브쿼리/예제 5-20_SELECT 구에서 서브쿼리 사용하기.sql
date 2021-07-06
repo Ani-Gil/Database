@@ -1,0 +1,1 @@
+SELECT (SELECT COUNT(*) FROM sample51) AS sq1, (SELECT COUNT(*) FROM sample54) sq2;

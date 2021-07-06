@@ -1,0 +1,1 @@
+SELECT * FROM (SELECT * FROM sample54) sq;

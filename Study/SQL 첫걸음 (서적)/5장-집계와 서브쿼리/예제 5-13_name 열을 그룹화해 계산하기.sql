@@ -1,0 +1,1 @@
+SELECT name, COUNT(name), SUM(quantity) FROM sample51 GROUP BY name;

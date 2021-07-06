@@ -1,0 +1,1 @@
+SELECT name, COUNT(name) FROM sample51 GROUP BY name HAVING COUNT(name) = 1;

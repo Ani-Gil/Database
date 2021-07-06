@@ -1,0 +1,1 @@
+INSERT INTO sample541 SELECt * FROM sample543;

@@ -1,0 +1,1 @@
+SELECT name FROM sample51 GROUP BY name;

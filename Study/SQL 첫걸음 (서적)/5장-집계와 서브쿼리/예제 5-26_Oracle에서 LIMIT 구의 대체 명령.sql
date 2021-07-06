@@ -1,0 +1,4 @@
+SELECT * FROM (
+    SELECT * FROM sample54 ORDER BY a DESC
+) sq
+WHERE ROWNUM <= 2;

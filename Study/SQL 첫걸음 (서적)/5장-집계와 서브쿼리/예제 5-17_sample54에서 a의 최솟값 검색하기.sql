@@ -1,0 +1,1 @@
+SELECT MIN(a) FROM sample54;

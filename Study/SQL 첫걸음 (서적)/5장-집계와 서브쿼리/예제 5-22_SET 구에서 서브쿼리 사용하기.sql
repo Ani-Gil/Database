@@ -1,0 +1,1 @@
+UPDATE sample54 SET a = (SELECT MAX(a) FROM sample54);

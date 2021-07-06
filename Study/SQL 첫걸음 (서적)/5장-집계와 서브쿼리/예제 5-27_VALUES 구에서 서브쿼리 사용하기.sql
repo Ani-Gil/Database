@@ -1,0 +1,5 @@
+INSERT INTO sample541 VALUES (
+    (SELECT COUNT(*) FROM sample51),
+    (SELECT COUNT(*) FROM sample54)
+);
+SELECT * FROM sample541;
