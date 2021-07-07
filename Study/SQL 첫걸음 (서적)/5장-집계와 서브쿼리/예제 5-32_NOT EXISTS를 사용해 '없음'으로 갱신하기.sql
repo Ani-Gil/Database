@@ -1,0 +1,2 @@
+UPDATE sample551 SET a = '없음' WHERE NOT EXISTS (SELECT * FROM sample552 WHERE no2 = no);
+SELECT * FROM sample551;

@@ -1,0 +1,1 @@
+SELECT * FROM sample551 WHERE no IN (3, 5);

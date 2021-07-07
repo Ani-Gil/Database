@@ -1,0 +1,1 @@
+SELECT * FROM sample551 WHERE no IN (SELECT no2 FROM sample552);
