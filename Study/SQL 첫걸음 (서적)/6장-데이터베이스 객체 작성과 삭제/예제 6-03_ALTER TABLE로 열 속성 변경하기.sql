@@ -1,0 +1,3 @@
+ALTER TABLE sample62 MODIFY newcol VARCHAR(20);
+
+DESC sample62;

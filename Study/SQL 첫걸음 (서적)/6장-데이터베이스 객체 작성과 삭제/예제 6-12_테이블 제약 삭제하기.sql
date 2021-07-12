@@ -1,0 +1,1 @@
+ALTER TABLE sample631 DROP CONSTRAINT pkey_sample631;

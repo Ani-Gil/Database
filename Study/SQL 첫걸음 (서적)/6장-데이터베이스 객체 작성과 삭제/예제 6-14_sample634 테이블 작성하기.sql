@@ -1,0 +1,5 @@
+CREATE TABLE sample634(
+    p INTEGER NOT NULL,
+    a VARCHAR(30),
+    CONSTRAINT pkey_sample634 PRIMARY KEY(p)
+);

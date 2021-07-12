@@ -1,0 +1,1 @@
+INSERT INTO sample634 VALUES (2, '넷째줄');

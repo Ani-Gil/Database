@@ -1,0 +1,5 @@
+CREATE TABLE sample631 (
+    a INTEGER NOT NULL,
+    b INTEGER NOT NULL UNIQUE,
+    c VARCHAR(30)
+);
