@@ -1,0 +1,1 @@
+CREATE INDEX isample65 ON sample62(no);

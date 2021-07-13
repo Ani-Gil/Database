@@ -1,0 +1,1 @@
+EXPLAIN SELECT * FROM sample62 WHERE no > 10;
