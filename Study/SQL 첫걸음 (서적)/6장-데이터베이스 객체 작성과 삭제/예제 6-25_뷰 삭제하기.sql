@@ -1,0 +1,1 @@
+DROP VIEW sample_view_67;

@@ -1,0 +1,3 @@
+SELECT * FROM sample71_a
+UNION ALL
+SELECT * FROM sample71_b;
