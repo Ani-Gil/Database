@@ -1,0 +1,1 @@
+SELECT * FROM 상품, 재고수;

@@ -1,0 +1,1 @@
+SELECT * FROM sample72_x, sample72_y;
