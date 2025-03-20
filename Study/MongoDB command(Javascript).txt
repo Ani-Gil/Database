@@ -1,0 +1,49 @@
+기본적으로 몽고DB를 컨트롤하는건 mongodbsh 이며, 해당 프로그램은 자바스크립트 기반으로 생성되어 있다.
+
+스키마 == 컬렉션 ex) db.(collection name).(function)
+컬럼 == 도큐멘트 ex) { "name" : "siwoo", "age" : 22 } -> 하나의 컬렉션이며 (키) : (값)으로 매칭됨
+
+도큐멘트 삽입 시 기본적으로 제공된 순서대로(정렬대로) 삽입하며, 삽입도중 문제 발생 시 문제 지점에서 중단하게 된다.
+다만 "ordered" 을 값을 false로 주게 되면 몽고DB 엔진이 성능 개선을 위한 재배치 후 삽입을 하게 되는데, 이 경우 중간에 오류가 발생해도
+나머지 문제되지 않은 모든 도큐멘트들이 정상적으로 삽입이 된다.
+
+- find
+컬렉션의 도큐멘트 등을 조회하는 명령어
+사용 예) db.movies.find()
+
+- insertOne
+컬렉션에 도큐먼트를 삽입하는 명령어
+사용 예) db.movies.insertOne({"title" : "Stand by Me"})
+
+- insertMany
+컬렉션에 여러 도큐멘트를 삽입하는 명령어
+ex) db.movies.insertMany([{"":""}.{"":""},{"":""}]);
+
+- deleteOne
+컬렉션에 도큐멘트를 삭제하는 명령어
+ex) db.movies.deleteOne({"_id" : 4})
+
+- deleteMany
+컬렉션에 도큐멘트를 여러 개 삭제하는 명령어
+ex) db.movies.deleteMany({"year" : 1984})
+
+- drop
+컬렉션에 도큐멘트를 모두 삭제하는 명령어이며, deleteMany 명령어로 모두 지우는 것보다 효율적이며,
+삭제 후 빈 컬렉션에 인텍스를 재생성해준다.
+ex ) db.movies.drop()
+
+- replaceOne
+컬렉션의 도큐멘트의 값을 바꿔주는 역할을 한다. find 명령어를 통해 변수 선언 및 해당 변수 내에 값들을 수정 후
+replaceOne 명령어를 이용하면 된다.
+ex) db.users.rplaceOne({"name":"joe"}, joe); // 여기서 첫 번째 값은 컬렉션을 지정하며, 두 번째는 수정한 변수의 이름을 넣어준다.
+
+- updateOne
+컬렉션의 도큐멘트의 값을 따로 변수 할당 등을 통한(replaceOne 형태)것이 아닌 명령어의 연산자를 통해 변경해주는 역할을 한다.
+기본적으로 다양한 연산자를 제공하며 
+- 주로 사용되는 연산자
+$inc -> 증감 연산자로 사용되며 도큐멘트 값이 숫자형이라면 해당 연산자를 통한 증감을 구현할 수 있다. ex) {"$inc" : {"pageviews" : 1"} -> "pageviews"의 도큐멘트 값에 1을 더한다. 또한 무조건 값이 숫자형이여야지만 적용이된다.
+$set -> 도큐멘트에 대한 추가, 수정, 생성이 가능하며 하위 도큐멘트까지 제어가 가능하다. ex) {"$set" : {"favorite book" : ["Cat's Cradle", "Foundation Trilogy", "Ender's Game"]}} -> 해당 컬랙션을 수정, 추가, 생성 하는 명령어이다.
+$unset -> 도큐멘트에 대한 삭제를 진행하는 명령어이다. ex) {"$unset" : {"favorite book" : 1}} -> "favorite booK"을 삭제한다. "1"의 경우 삭제
+하는 구문이다.
+
+
